@@ -1,0 +1,11 @@
+# Ignore system files
+*.dll
+*.exe
+*.xml
+*.inf
+*.bin
+*.dat
+*.ttf
+
+# Ignore Windows folders
+/C:/ESD/
