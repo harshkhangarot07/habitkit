@@ -9,7 +9,9 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({origin: 'https://tasktracker-kiz5c3zzk-hxrshs-projects.vercel.app/login ',
+ methods: ['GET', 'POST'],
+}));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URI)
